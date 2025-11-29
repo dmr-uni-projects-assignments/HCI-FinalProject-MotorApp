@@ -1,0 +1,29 @@
+/* --- CSS Reset & Global Styles --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Arial", sans-serif;
+    background-color: rgb(29, 29, 29);
+    color: whitesmoke;
+    text-align: justify;
+}
+
+p,
+a {
+    font-size: 20px;
+    color: inherit;
+}
+
+.button {
+    padding: 10px;
+    text-decoration: none;
+    border: 2px solid white;
+    border-radius: 10px;
+    display: inline-block;
+
+}
