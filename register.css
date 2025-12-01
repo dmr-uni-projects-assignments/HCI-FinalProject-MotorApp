@@ -1,0 +1,40 @@
+/* --- REGISTER PAGE SPECIFIC STYLES --- */
+.register-container {
+    margin: 80px auto 60px; 
+    padding: 0 20px;
+}
+
+.register-container .login-btn {
+    width: 100%;
+    padding: 22px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    background: red;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+.register-container .register-link {
+    display: block;
+    color: white;
+    margin-top: 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.register-container .register-link:hover {
+    color: red;
+}
+
+/* Light Mode Adjustment */
+body.light-mode .register-container .register-link {
+    color: black;
+}
+
+body.light-mode .register-container .register-link:hover {
+    color: red;
+}
