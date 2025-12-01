@@ -22,8 +22,16 @@ a {
 .button {
     padding: 10px;
     text-decoration: none;
-    border: 2px solid white;
+    border: 2px solid red;
     border-radius: 10px;
     display: inline-block;
 
+}
+
+.banner {
+    width: 100%;
+    max-height: 600px;
+    object-fit: cover;
+    border-bottom: 5px solid red;
+    margin-bottom: 10px;
 }
