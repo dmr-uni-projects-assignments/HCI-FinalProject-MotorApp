@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Honda User Profile</title>
+    <!-- Use the main stylesheet for global styles (like body/light-mode) -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Link to the specific profile page styles -->
+    <link rel="stylesheet" href="profile.css" />
+</head>
+
+<body>
+    <!-- DARK MODE TOGGLE -->
+    <button id="mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+
+    <main class="profile-container">
+        <div class="profile-card">
+            <div class="profile-header">
+                <span class="profile-icon">👤</span>
+                <h1>Welcome Back, Biker!</h1>
+                <p class="member-since">Member Since: April 2023</p>
+            </div>
+            
+            <section class="user-details">
+                <h2>Account Details</h2>
+                <div class="detail-row">
+                    <span class="label">Username:</span>
+                    <span class="value">HondaRider_47</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Email:</span>
+                    <span class="value">honda.rider@email.com</span>
+                </div>
+                <div class="detail-row">
+                    <span class="label">Location:</span>
+                    <span class="value">Cirebon, Jawa Barat</span>
+                </div>
+            </section>
+
+            <section class="bike-info">
+                <h2>Your Honda</h2>
+                <div class="bike-details">
+                    <span class="label">Model:</span>
+                    <span class="value">-</span>
+                </div>
+                <div class="bike-details">
+                    <span class="label">Year:</span>
+                    <span class="value">-</span>
+                </div>
+            </section>
+
+            <a href="index.html" class="back-link">← Go back to Login</a>
+        </div>
+    </main>
+    
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <p>&copy; 2025 Honda Login. All rights reserved.</p>
+    </footer>
+
+    <!-- Use the main script for dark mode functionality -->
+    <script src="script.js"></script>
+    <script src="profile.js"></script>
+</body>
+</html>

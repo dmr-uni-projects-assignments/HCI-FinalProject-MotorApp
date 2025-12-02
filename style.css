@@ -1,0 +1,225 @@
+/* GLOBAL STYLES */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #000;
+    font-family: Arial, sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+/* DARK MODE BUTTON */
+#mode-toggle {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 999;
+    background: rgba(255,255,255,0.1);
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 26px;
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+}
+/* HEADER IMAGE */
+.header-img {
+    width: 100%;
+    height: 45vh;
+    background-image: url("honda.jpg"); 
+    background-position: 50% 40%; 
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+/* DIAGONAL STRIP */
+.diagonal {
+    position: absolute; 
+    top: calc(45vh - 25px); 
+    left: 50%;
+    width: 160%;
+    height: 30px;
+    background: red;
+    transform: translateX(-50%) rotate(-10deg);
+    z-index: 100; 
+}
+/* LOGIN CONTAINER */
+.login-container {
+    width: 100%;
+    max-width: 700px;
+    margin-top: calc(45vh + 70px);
+    margin: 120px auto 60px;
+    text-align: center;
+}
+
+.login-container h1 {
+    color: red;
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+/* INPUT BOXES */
+.input-box {
+    width: 100%;
+    padding: 20px;
+    margin: 15px 0;
+    border: none;
+    border-radius: 30px;
+    background: #444;
+    color: #fff;
+    font-size: 20px;
+    outline: none;
+    text-align: center; }
+
+/* LOGIN BUTTON */
+.login-btn {
+    width: 100%;
+    padding: 22px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    background: red;
+    color: white;
+    font-size: 26px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.login-btn:hover {
+    opacity: 0.85;
+}
+
+/* REGISTER LINK */
+.register-link {
+    display: block;
+    color: #ccc;
+    margin-top: 25px;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+.register-link:hover {
+    color: white;
+}
+
+/* === LIGHT MODE STYLES === */
+body.light-mode {
+    background: #fff; 
+    color: #000;      
+}
+
+body.light-mode .login-container h1 {
+    color: #000; 
+}
+
+body.light-mode .input-box {
+    background: #eee; 
+    color: #000;
+}
+
+body.light-mode #mode-toggle {
+    background: rgba(0,0,0,0.1); 
+}
+
+
+body.light-mode .login-btn {
+    background: #f00; 
+    color: #fff;
+}
+
+
+body.light-mode .register-link {
+    color: #555; 
+}
+
+body.light-mode .register-link:hover {
+    color: #000; 
+}
+
+
+.site-footer {
+    padding: 20px 0;
+    text-align: center;
+    background: #111; 
+    color: #888; 
+    font-size: 14px;
+    z-index: 100;
+}
+body.light-mode .site-footer {
+    background: #f0f0f0; 
+    color: #444; 
+}
+body.light-mode .profile-link {
+    background: rgba(0, 0, 0, 0.1); 
+}
+/* PROFILE ICON LINK */
+.profile-link {
+    position: fixed; 
+    top: 20px;
+    right: 20px; 
+    z-index: 999;
+    
+    
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    padding: 15px;
+    border-radius: 12px;
+    font-size: 26px; 
+    text-decoration: none; 
+    cursor: pointer;
+    backdrop-filter: blur(5px);
+    color: white; 
+}
+/* --- LOGIN CONTAINER LINK STYLING --- */
+
+/* 1. GENERAL LINK */
+.login-container a {
+    display: block;
+    margin-top: 18px;
+    font-size: 18px; 
+}
+
+/* 2. REGISTER LINK */
+.register-link {
+    color: red; 
+    text-decoration: none; 
+}
+
+.register-link:hover {
+    color: white;
+}
+
+/* 3. FORGOT PASSWORD LINK */
+.forgot-link {
+    color: red; 
+    text-decoration: underline; 
+}
+
+.forgot-link:hover {
+    color: white; 
+}
+
+
+/* Light Mode: Register Link */
+body.light-mode .register-link {
+    color: red; 
+}
+
+body.light-mode .register-link:hover {
+    color: black; 
+}
+
+/* Light Mode: Forgot Password Link */
+body.light-mode .forgot-link {
+    color: red; 
+}
+
+body.light-mode .forgot-link:hover {
+    color: #000; 
+}
