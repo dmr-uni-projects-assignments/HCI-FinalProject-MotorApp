@@ -16,25 +16,32 @@
     font-weight: bold;
     cursor: pointer;
 }
-
+.register-container .login-btn:hover{
+    background: darkred;
+}
 
 .register-container .register-link {
     display: block;
-    color: white;
+    color: red;
     margin-top: 25px;
     font-size: 18px;
     text-decoration: none;
 }
 
 .register-container .register-link:hover {
-    color: red;
+    color: white;
 }
 
 /* Light Mode Adjustment */
 body.light-mode .register-container .register-link {
-    color: black;
+    color: red;
 }
 
 body.light-mode .register-container .register-link:hover {
-    color: red;
+    color: black;
+}
+
+body.light-mode .register-container .login-btn:hover {
+
+    background: darkred;
 }
