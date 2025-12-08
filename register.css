@@ -5,36 +5,100 @@
 }
 
 .register-container .login-btn {
-    width: 100%;
-    padding: 22px;
+    width: 200px;
+    padding: 10px;
     margin-top: 20px;
     border: none;
     border-radius: 30px;
     background: red;
     color: white;
-    font-size: 26px;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
 }
-
+.register-container .login-btn:hover{
+    background: darkred;
+}
 
 .register-container .register-link {
     display: block;
-    color: white;
+    color: red;
     margin-top: 25px;
     font-size: 18px;
     text-decoration: none;
 }
 
 .register-container .register-link:hover {
-    color: red;
+    color: white;
 }
 
 /* Light Mode Adjustment */
 body.light-mode .register-container .register-link {
-    color: black;
+    color: red;
 }
 
 body.light-mode .register-container .register-link:hover {
-    color: red;
+    color: black;
+}
+
+body.light-mode .register-container .login-btn:hover {
+
+    background: darkred;
+} 
+/* === 1. Extra Small Phones (≤ 480px) === */
+@media (max-width: 480px) {
+    .register-container {
+        margin: 40px auto 40px;
+        padding: 0 15px;
+    }
+
+    .register-container .login-btn {
+        width: 70%;
+        font-size: 16px;
+    }
+
+    .register-container .register-link {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+}
+
+/* === 2. Small Phones (≤ 600px) === */
+@media (max-width: 600px) {
+    .register-container {
+        margin: 50px auto 50px;
+    }
+
+    .register-container .login-btn {
+        width: 60%;
+        font-size: 17px;
+    }
+}
+
+/* === 3. Tablets (≤ 768px) === */
+@media (max-width: 768px) {
+    .register-container {
+        margin: 60px auto 55px;
+    }
+
+    .register-container .login-btn {
+        width: 45%;
+        font-size: 18px;
+    }
+}
+
+/* === 4. Small Laptops (≤ 1024px) === */
+@media (max-width: 1024px) {
+    .register-container .login-btn {
+        width: 35%;
+        font-size: 19px;
+    }
+}
+
+/* === 5. Medium / Large Laptops (≤ 1280px) === */
+@media (max-width: 1280px) {
+    .register-container .login-btn {
+        width: 30%;
+        font-size: 20px;
+    }
 }
