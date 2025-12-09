@@ -45,6 +45,10 @@ body.light-mode .register-container .login-btn:hover {
 
     background: darkred;
 } 
+#sidebar { z-index: 2000; }
+#sidebar-toggle { z-index: 2001; }
+#overlay { z-index: 1500; }
+
 /* === 1. Extra Small Phones (≤ 480px) === */
 @media (max-width: 480px) {
     .register-container {
