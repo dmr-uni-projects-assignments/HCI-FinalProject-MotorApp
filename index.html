@@ -9,15 +9,27 @@
 
 <body>
 
-    <!-- DARK MODE BUTTON  -->
-    <button id="mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    <!-- sidebar button -->
+    <button id="sidebar-toggle">☰</button>
 
-    <!-- HEADER -->
-    <a href="profile.html" class="profile-link" aria-label="Profile Page">👤</a>
-    <header class="header-img">
-    </header>
+    <!-- sidebar -->
+    <div id="sidebar">
+        <h2 class="sidebar-title">Menu</h2>
 
-    <!-- LOGIN AREA -->
+        <a href="index.html" class="sidebar-item">Home</a>
+        <a href="profile.html" class="sidebar-item">Profile</a>
+
+        <!-- dark mode button -->
+        <button id="mode-toggle" class="sidebar-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- overlay -->
+    <div id="overlay"></div>
+
+    <!-- honda image -->
+    <header class="header-img"></header>
+
+    <!-- login -->
     <main class="login-container">
         <h1>HELLO HONDA BIKERS!</h1>
 
@@ -26,14 +38,16 @@
             <input type="password" class="input-box" placeholder="Password" required>
             <button class="login-btn" type="submit">LOGIN</button>
         </form>
+
         <a href="register.html" class="register-link">Don’t have an account? Register</a>
         <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
     </main>
 
-    <script src="script.js"></script>
+    <!-- footer -->
     <footer class="site-footer">
         <p>&copy; 2025 Honda Login. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
-    </body>
+</body>
 </html>

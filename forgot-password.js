@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     resetForm.addEventListener('submit', (e) => {
         e.preventDefault(); 
         
-        // --- Placeholder Reset Logic ---
         const email = resetForm.querySelector('input[type="email"]').value;
         console.log(`Sending password reset link to: ${email}`);
         

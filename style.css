@@ -1,18 +1,18 @@
-/* GLOBAL STYLES */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
 body {
     background: #000;
-    font-family: Arial, sans-serif;
+    font-family: arial, sans-serif;
     color: white;
     overflow-x: hidden;
 }
 
-/* DARK MODE BUTTON */
+/* dark mode button */
 #mode-toggle {
     position: fixed;
     top: 20px;
@@ -26,21 +26,20 @@ body {
     cursor: pointer;
     backdrop-filter: blur(5px);
 }
-/* === HEADER IMAGE === */
+
+/* header image */
 .header-img {
     width: 100%;
     height: 45vh;
-    background-image: url("honda.jpg"); 
-    background-position: 50% 40%; 
+    background-image: url("honda.jpg");
+    background-position: 50% 40%;
     background-size: cover;
     background-repeat: no-repeat;
     position: relative;
     border-bottom: 30px red solid;
 }
 
-/* DIAGONAL STRIP */
-
-/* LOGIN CONTAINER */
+/* login container */
 .login-container {
     width: 100%;
     max-width: 700px;
@@ -55,7 +54,7 @@ body {
     margin-bottom: 50px;
 }
 
-/* INPUT BOXES */
+/* input box */
 .input-box {
     width: 80%;
     padding: 10px;
@@ -66,12 +65,12 @@ body {
     color: #fff;
     font-size: 20px;
     outline: none;
-    text-align: center; }
+    text-align: center;
+}
 
-/* LOGIN BUTTON */
+/* login button */
 .login-btn {
     width: 20%;
-    height: auto;
     padding: 10px;
     margin-top: 20px;
     border: none;
@@ -87,10 +86,10 @@ body {
     opacity: 0.85;
 }
 
-/* REGISTER LINK */
+/* register link */
 .register-link {
     display: block;
-    color: #ccc;
+    color: red;
     margin-top: 25px;
     font-size: 18px;
     text-decoration: none;
@@ -100,215 +99,195 @@ body {
     color: white;
 }
 
-/* === LIGHT MODE STYLES === */
+/* forgot password link */
+.forgot-link {
+    color: red;
+    text-decoration: underline;
+}
+
+.forgot-link:hover {
+    color: white;
+}
+
+/* light mode adjustments */
 body.light-mode {
-    background: #fff; 
-    color: #000;      
+    background: #fff;
+    color: #000;
 }
 
 body.light-mode .login-container h1 {
-    color: #000; 
+    color: #000;
 }
 
 body.light-mode .input-box {
-    background: #eee; 
+    background: #eee;
     color: #000;
 }
 
 body.light-mode #mode-toggle {
-    background: rgba(0,0,0,0.1); 
+    background: rgba(0,0,0,0.1);
 }
 
-
-body.light-mode .login-btn {
-    background: #f00; 
-    color: #fff;
+body.light-mode .register-link,
+body.light-mode .forgot-link {
+    color: red;
 }
 
-
-body.light-mode .register-link {
-    color: #555; 
+body.light-mode .register-link:hover,
+body.light-mode .forgot-link:hover {
+    color: black;
 }
 
-body.light-mode .register-link:hover {
-    color: #000; 
-}
-
-
+/* footer */
 .site-footer {
     padding: 20px 0;
     text-align: center;
-    background: #111; 
-    color: #888; 
+    background: #111;
+    color: #888;
     font-size: 14px;
-    z-index: 100;
 }
+
 body.light-mode .site-footer {
-    background: #f0f0f0; 
-    color: #444; 
+    background: #f0f0f0;
+    color: #444;
 }
-body.light-mode .profile-link {
-    background: rgba(0, 0, 0, 0.1); 
-}
-/* PROFILE ICON LINK */
+
+/* profile icon */
 .profile-link {
-    position: fixed; 
+    position: fixed;
     top: 20px;
-    right: 20px; 
-    z-index: 999;
-    
-    
-    background: rgba(255, 255, 255, 0.1);
+    right: 20px;
+    z-index: 1000;
+    background: darkgray;
     border: none;
     padding: 15px;
     border-radius: 12px;
-    font-size: 26px; 
-    text-decoration: none; 
+    font-size: 26px;
+    text-decoration: none;
     cursor: pointer;
     backdrop-filter: blur(5px);
-    color: white; 
-}
-/* --- LOGIN CONTAINER LINK STYLING --- */
-
-/* 1. GENERAL LINK */
-.login-container a {
-    display: block;
-    margin-top: 18px;
-    font-size: 18px; 
-}
-
-/* 2. REGISTER LINK */
-.register-link {
-    color: red; 
-    text-decoration: none; 
-}
-
-.register-link:hover {
     color: white;
 }
 
-/* 3. FORGOT PASSWORD LINK */
-.forgot-link {
-    color: red; 
-    text-decoration: underline; 
+/* sidebar button */
+#sidebar-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 2001;   /* FIX */
+}
+/* sidebar on the right */
+#sidebar {
+    position: fixed;
+    top: 0;
+    right: -260px;
+    width: 260px;
+    height: 100%;
+    background: #111;
+    color: white;
+    padding: 30px 20px;
+    z-index: 2000;   /* FIX */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
-.forgot-link:hover {
-    color: white; 
+/* open sidebar */
+#sidebar.open {
+    right: 0;
 }
 
-
-/* Light Mode: Register Link */
-body.light-mode .register-link {
-    color: red; 
+/* sidebar title */
+.sidebar-title {
+    font-size: 24px;
 }
 
-body.light-mode .register-link:hover {
-    color: black; 
+/* sidebar links */
+.sidebar-item {
+    color: darkgray;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 10px 0;
 }
 
-/* Light Mode: Forgot Password Link */
-body.light-mode .forgot-link {
-    color: red; 
+.sidebar-item:hover {
+    color: white;
 }
 
-body.light-mode .forgot-link:hover {
-    color: #000; 
+/* sidebar button */
+.sidebar-btn {
+    padding: 12px;
+    font-size: 20px;
+    background: red;
+    border: none;
+    border-radius: 12px;
+    color: white;
+    cursor: pointer;
 }
 
-/* === 1. Extra Small Phones (≤ 480px) === */
+.sidebar-btn:hover {
+    opacity: 0.8;
+}
+
+/* overlay */
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0);
+    z-index: 1500;   /* FIX */
+    display: none;
+}
+
+#overlay.show {
+    display: block;
+}
+
+/* light mode sidebar */
+body.light-mode #sidebar {
+    background: lightgray;
+    color: #000;
+}
+
+body.light-mode .sidebar-item {
+    color: darkgray;
+}
+
+body.light-mode .sidebar-item:hover {
+    color: #000;
+}
+
+body.light-mode .sidebar-btn {
+    background: #f00;
+    color: white;
+}
+
+/* responsive adjustments */
 @media (max-width: 480px) {
-    .header-img {
-        height: 30vh;
-        background-position: center;
-    }
-
-    .login-container {
-        margin: 40px auto 40px;
-        padding: 0 15px;
-    }
-
-    .login-container h1 {
-        font-size: 28px;
-        margin-bottom: 25px;
-    }
-
-    .input-box {
-        width: 100%;
-        font-size: 16px;
-    }
-
-    .login-btn {
-        width: 60%;
-        font-size: 18px;
-    }
+    .header-img { height: 30vh; }
+    .login-container { margin: 40px auto; }
+    .login-container h1 { font-size: 28px; }
+    .input-box { width: 100%; font-size: 16px; }
+    .login-btn { width: 60%; }
 }
 
-/* === 2. Small Phones (≤ 600px) === */
-@media (max-width: 600px) {
-    .header-img {
-        height: 35vh;
-    }
-
-    .login-container h1 {
-        font-size: 32px;
-    }
-
-    .input-box {
-        width: 90%;
-    }
-
-    .login-btn {
-        width: 50%;
-    }
-}
-
-/* === 3. Tablets (≤ 768px) === */
 @media (max-width: 768px) {
-    .header-img {
-        height: 40vh;
-    }
-
-    .login-container {
-        margin: 60px auto 50px;
-    }
-
-    .login-container h1 {
-        font-size: 40px;
-    }
-
-    .input-box {
-        width: 85%;
-        font-size: 18px;
-    }
-
-    .login-btn {
-        width: 35%;
-    }
+    .header-img { height: 40vh; }
+    .login-container { margin: 60px auto; }
+    .login-container h1 { font-size: 40px; }
+    .input-box { width: 85%; font-size: 18px; }
+    .login-btn { width: 35%; }
 }
 
-/* === 4. Small Laptops (≤ 1024px) === */
 @media (max-width: 1024px) {
-    .header-img {
-        height: 42vh;
-    }
-
-    .login-container h1 {
-        font-size: 44px;
-    }
-
-    .login-btn {
-        width: 25%;
-    }
+    .header-img { height: 42vh; }
+    .login-container h1 { font-size: 44px; }
+    .login-btn { width: 25%; }
 }
 
-/* === 5. Medium / Large Laptops (≤ 1280px) === */
 @media (max-width: 1280px) {
-    .login-container {
-        margin: 70px auto 60px;
-    }
-
-    .login-btn {
-        width: 22%;
-    }
+    .login-container { margin: 70px auto; }
+    .login-btn { width: 22%; }
 }
