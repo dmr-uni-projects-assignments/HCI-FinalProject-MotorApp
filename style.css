@@ -173,20 +173,23 @@ body.light-mode .site-footer {
 #sidebar-toggle {
     position: fixed;
     top: 20px;
-    right: 20px;
-    z-index: 2001;   
+    right: 25px;
+    z-index: 2001;  
+    background: darkgray;
+    height: 50px;
+    width: 50px;
 }
 /* sidebar on the right */
 #sidebar {
     position: fixed;
-    top: 0;
+    top: 0px;
     right: -260px;
     width: 260px;
     height: 100%;
     background: #111;
     color: white;
     padding: 30px 20px;
-    z-index: 2000;   /* FIX */
+    z-index: 2000; 
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -204,7 +207,7 @@ body.light-mode .site-footer {
 
 /* sidebar links */
 .sidebar-item {
-    color: darkgray;
+    color: lightgray;
     text-decoration: none;
     font-size: 18px;
     padding: 10px 0;
@@ -245,18 +248,18 @@ body.light-mode .site-footer {
     display: block;
 }
 
-/* light mode sidebar */
+/* light mode sidebar ("MENU" text)*/
 body.light-mode #sidebar {
     background: lightgray;
-    color: #000;
+    color: BLACK;
 }
 
 body.light-mode .sidebar-item {
-    color: darkgray;
+    color: #333;
 }
 
 body.light-mode .sidebar-item:hover {
-    color: #000;
+    color: black;
 }
 
 body.light-mode .sidebar-btn {
@@ -264,7 +267,7 @@ body.light-mode .sidebar-btn {
     color: white;
 }
 
-/* responsive adjustments */
+/* responsive design */
 @media (max-width: 480px) {
     .header-img { height: 30vh; }
     .login-container { margin: 40px auto; }
