@@ -3,21 +3,24 @@
     margin: 80px auto 60px; 
     padding: 0 20px;
 }
-
-.register-container .login-btn {
-    width: 200px;
-    padding: 10px;
-    margin-top: 20px;
-    border: none;
-    border-radius: 30px;
-    background: red;
-    color: white;
-    font-size: 20px;
+.input-label {
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin: 15px auto 5px;
     font-weight: bold;
-    cursor: pointer;
+    font-size: 20px;
+    color: white;
 }
-.register-container .login-btn:hover{
+
+.login-btn {
+    padding: 10px;
+    font-size: 12px;
+}
+
+.login-btn:hover{
     background: darkred;
+    transition: ease-in-out 0.3s;
 }
 
 .register-container .register-link {
@@ -45,6 +48,10 @@ body.light-mode .register-container .login-btn:hover {
 
     background: darkred;
 } 
+body.light-mode .input-label {
+    color: black;
+}
+
 #sidebar { z-index: 2000; }
 #sidebar-toggle { z-index: 2001; }
 #overlay { z-index: 1500; }
@@ -57,7 +64,7 @@ body.light-mode .register-container .login-btn:hover {
     }
 
     .register-container .login-btn {
-        width: 70%;
+        width: 20%;
         font-size: 16px;
     }
 
@@ -74,7 +81,7 @@ body.light-mode .register-container .login-btn:hover {
     }
 
     .register-container .login-btn {
-        width: 60%;
+        width: 70%;
         font-size: 17px;
     }
 }
@@ -99,10 +106,4 @@ body.light-mode .register-container .login-btn:hover {
     }
 }
 
-/* === 5. Medium / Large Laptops (≤ 1280px) === */
-@media (max-width: 1280px) {
-    .register-container .login-btn {
-        width: 30%;
-        font-size: 20px;
-    }
-}
+

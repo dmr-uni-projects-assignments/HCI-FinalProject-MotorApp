@@ -67,6 +67,11 @@ body {
     outline: none;
     text-align: center;
 }
+.input-box::placeholder {
+    font-size: 14px;
+    color: #ccc;
+}
+
 
 /* login button */
 .login-btn {
@@ -84,7 +89,18 @@ body {
 
 .login-btn:hover {
     opacity: 0.85;
+    transition: ease-in-out 0.3s;
 }
+.input-label {
+    display: block;
+    text-align: left;
+    width: 80%;
+    margin: 15px auto 5px;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+
 
 /* register link */
 .register-link {
@@ -137,6 +153,10 @@ body.light-mode .register-link:hover,
 body.light-mode .forgot-link:hover {
     color: black;
 }
+body.light-mode .input-box::placeholder {
+    color: #666;
+}
+
 
 /* footer */
 .site-footer {
@@ -217,20 +237,23 @@ body.light-mode .site-footer {
     color: white;
 }
 
-/* sidebar button */
-.sidebar-btn {
-    padding: 12px;
+
+#sidebar-toggle {
+    padding: 10px;
     font-size: 20px;
-    background: red;
+    background: grey;
     border: none;
-    border-radius: 12px;
+    border-radius: 6px;
     color: white;
     cursor: pointer;
+    transition: grey 0.3s ease, opacity 0.3s ease;
 }
 
-.sidebar-btn:hover {
-    opacity: 0.8;
+#sidebar-toggle:hover {
+    background: darkgrey; 
+    opacity: 0.9;
 }
+
 
 /* overlay */
 #overlay {
@@ -266,6 +289,10 @@ body.light-mode .sidebar-btn {
     background: #f00;
     color: white;
 }
+body.light-mode .input-label {
+    color: black;
+}
+
 
 /* responsive design */
 @media (max-width: 480px) {
