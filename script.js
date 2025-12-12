@@ -12,7 +12,7 @@ overlay.addEventListener("click", () => {
 });
 
 
-// dark mode
+// dark light mode
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('mode-toggle');
     const body = document.body;

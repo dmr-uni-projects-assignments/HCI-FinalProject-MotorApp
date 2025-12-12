@@ -116,10 +116,15 @@ body {
 }
 
 /* forgot password link */
+
 .forgot-link {
+    display: block;
+    margin-top: 15px;
     color: red;
     text-decoration: underline;
 }
+
+
 
 .forgot-link:hover {
     color: white;

@@ -1,4 +1,4 @@
-/* --- REGISTER PAGE SPECIFIC STYLES --- */
+/* --- REGISTER PAGE --- */
 .register-container {
     margin: 80px auto 60px; 
     padding: 0 20px;
@@ -35,7 +35,7 @@
     color: white;
 }
 
-/* Light Mode Adjustment */
+/* light mode adjustment */
 body.light-mode .register-container .register-link {
     color: red;
 }
@@ -56,7 +56,7 @@ body.light-mode .input-label {
 #sidebar-toggle { z-index: 2001; }
 #overlay { z-index: 1500; }
 
-/* === 1. Extra Small Phones (≤ 480px) === */
+/* === Extra Small Phones (≤ 480px) === */
 @media (max-width: 480px) {
     .register-container {
         margin: 40px auto 40px;
@@ -74,7 +74,7 @@ body.light-mode .input-label {
     }
 }
 
-/* === 2. Small Phones (≤ 600px) === */
+/* === Small Phones === */
 @media (max-width: 600px) {
     .register-container {
         margin: 50px auto 50px;
@@ -86,7 +86,7 @@ body.light-mode .input-label {
     }
 }
 
-/* === 3. Tablets (≤ 768px) === */
+/* === Tablets === */
 @media (max-width: 768px) {
     .register-container {
         margin: 60px auto 55px;
@@ -98,7 +98,7 @@ body.light-mode .input-label {
     }
 }
 
-/* === 4. Small Laptops (≤ 1024px) === */
+/* === Small Laptops === */
 @media (max-width: 1024px) {
     .register-container .login-btn {
         width: 35%;
