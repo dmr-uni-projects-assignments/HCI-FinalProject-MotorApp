@@ -10,37 +10,57 @@
 
 <body>
 
-    <!-- DARK MODE TOGGLE -->
-    <button id="mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    <!-- sidebar button -->
+<button id="sidebar-toggle">☰</button>
 
-    <!-- HEADER -->
+<!-- sidebar -->
+<div id="sidebar">
+    <h2 class="sidebar-title">Menu</h2>
+
+    <a href="index.html" class="sidebar-item">Home</a>
+    <a href="profile.html" class="sidebar-item">Profile</a>
+
+    <button id="mode-toggle" class="sidebar-btn">🌙 Dark Mode</button>
+</div>
+
+<!-- OVERLAY -->
+<div id="overlay"></div>
+
+
+    <!-- header -->
     <header class="header-img">
     </header>
     
-    <!-- RED DIAGONAL STRIP -->
+    <!-- red strip -->
     <div class="diagonal"></div>
 
-    <!-- REGISTER AREA -->
+    <!-- area register -->
     <main class="register-container login-container">
         <h1>JOIN THE HONDA FAMILY!</h1>
 
         <form class="form">
-            <input type="text" class="input-box" placeholder="Username" required>
-            <input type="email" class="input-box" placeholder="Email Address" required>
-            <input type="password" class="input-box" placeholder="Password" required>
-            <input type="password" class="input-box" placeholder="Confirm Password" required>
+            <label class="input-label">Username</label>
+            <input type="text" class="input-box" placeholder="Enter your username" required>
+            <label class="input-label">Email Address</label>
+            <input type="email" class="input-box" placeholder="Enter your email" required>
+            <label class="input-label">Password</label>
+            <input type="password" class="input-box" placeholder="Enter your password" required>
+
+<label class="input-label">Confirm Password</label>
+<input type="password" class="input-box" placeholder="Re-enter your password" required>
+
             <button class="login-btn" type="submit">REGISTER</button>
         </form>
 
         <a href="index.html" class="register-link">Already have an account? Login here</a>
     </main>
     
-    <!-- FOOTER -->
+    <!-- footer -->
     <footer class="site-footer">
         <p>&copy; 2025 Honda Login. All rights reserved.</p>
     </footer>
 
-    <!-- Scripts -->
+    <!-- scripts -->
     <script src="script.js"></script>
     <script src="register.js"></script>
 </body>

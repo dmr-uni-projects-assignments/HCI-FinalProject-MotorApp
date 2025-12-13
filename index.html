@@ -4,36 +4,54 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Honda Login</title>
+    <link href='https://cdn.boxicons.com/3.0.6/fonts/basic/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
 
-    <!-- DARK MODE BUTTON  -->
-    <button id="mode-toggle" aria-label="Toggle Dark Mode">🌙</button>
+    <!-- sidebar button -->
+    <button id="sidebar-toggle"><i class='bx bx-menu'></i></button>
 
-    <!-- HEADER -->
-    <a href="profile.html" class="profile-link" aria-label="Profile Page">👤</a>
-    <header class="header-img">
-    </header>
+    <!-- sidebar -->
+    <div id="sidebar">
+        <h2 class="sidebar-title">Menu</h2>
 
-    <!-- LOGIN AREA -->
+        <a href="index.html" class="sidebar-item">Home</a>
+        <a href="profile.html" class="sidebar-item">Profile</a>
+
+        <!-- dark mode button -->
+        <button id="mode-toggle" class="sidebar-btn">🌙 Dark Mode</button>
+    </div>
+
+    <!-- overlay -->
+    <div id="overlay"></div>
+
+    <!-- honda image -->
+    <header class="header-img"></header>
+
+    <!-- login -->
     <main class="login-container">
         <h1>HELLO HONDA BIKERS!</h1>
 
         <form class="form">
-            <input type="text" class="input-box" placeholder="Username" required>
-            <input type="password" class="input-box" placeholder="Password" required>
+            <label class="input-label">Username</label>
+            <input type="text" class="input-box" placeholder="Enter your username" required>
+            <label class="input-label">Password</label>
+            <input type="password" class="input-box" placeholder="Enter your password" required>
+
             <button class="login-btn" type="submit">LOGIN</button>
         </form>
+
         <a href="register.html" class="register-link">Don’t have an account? Register</a>
         <a href="forgot-password.html" class="forgot-link">Forgot Password?</a>
     </main>
 
-    <script src="script.js"></script>
+    <!-- footer -->
     <footer class="site-footer">
         <p>&copy; 2025 Honda Login. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 
-    </body>
+</body>
 </html>
