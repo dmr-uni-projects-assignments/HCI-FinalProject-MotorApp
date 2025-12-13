@@ -45,21 +45,28 @@ document.addEventListener("DOMContentLoaded", () => {
 
     if (!registerForm) return;
 
-    registerForm.addEventListener("submit", function(e) {
-        e.preventDefault();
+    registerForm.addEventListener("submit", function (e) {
+    e.preventDefault();
 
-        emailjs.sendForm(
+    emailjs.sendForm(
+        "service_register",
+        "template_register01",
+        this
+    )
+    .then(() => {
+        return emailjs.sendForm(
             "service_register",
-            "template_register01",
+            "template_register_user",
             this
-        ).then(
-            () => {
-                alert("Registration successful. Admin has been notified.");
-            },
-            (error) => {
-                alert("Registration failed. Please try again.");
-                console.log(error);
-            }
         );
+    })
+    .then(() => {
+        alert("Registration successful! Check your email.");
+        registerForm.reset();
+    })
+    .catch((error) => {
+        console.error(error);
+        alert("Registration failed. Please try again.");
     });
+});
 });
