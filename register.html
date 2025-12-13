@@ -61,6 +61,7 @@
         <input
             type="password"
             class="input-box"
+            name="password"
             placeholder="Enter your password"
             required
         >
@@ -69,6 +70,7 @@
         <input
             type="password"
             class="input-box"
+            name="confirm_password"
             placeholder="Re-enter your password"
             required
         >
@@ -85,9 +87,16 @@
     </footer>
 
     <!-- scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function () {
+            emailjs.init("qCbLFZCQQZiwvV7Ts");
+        })();
+    </script>
+
     <script src="script.js"></script>
     <script src="register.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
     <script>
         (function(){
         emailjs.init("qCbLFZCQQZiwvV7Ts");
