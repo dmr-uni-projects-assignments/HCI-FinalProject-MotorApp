@@ -40,3 +40,26 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
 });
+document.addEventListener("DOMContentLoaded", () => {
+    const registerForm = document.getElementById("register-form");
+
+    if (!registerForm) return;
+
+    registerForm.addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_register",
+            "template_register01",
+            this
+        ).then(
+            () => {
+                alert("Registration successful. Admin has been notified.");
+            },
+            (error) => {
+                alert("Registration failed. Please try again.");
+                console.log(error);
+            }
+        );
+    });
+});

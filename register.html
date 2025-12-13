@@ -38,19 +38,43 @@
     <main class="register-container login-container">
         <h1>JOIN THE HONDA FAMILY!</h1>
 
-        <form class="form">
-            <label class="input-label">Username</label>
-            <input type="text" class="input-box" placeholder="Enter your username" required>
-            <label class="input-label">Email Address</label>
-            <input type="email" class="input-box" placeholder="Enter your email" required>
-            <label class="input-label">Password</label>
-            <input type="password" class="input-box" placeholder="Enter your password" required>
+    <form class="form" id="register-form">
+        <label class="input-label">Username</label>
+        <input
+            type="text"
+            class="input-box"
+            name="username"
+            placeholder="Enter your username"
+            required
+        >
 
-<label class="input-label">Confirm Password</label>
-<input type="password" class="input-box" placeholder="Re-enter your password" required>
+        <label class="input-label">Email Address</label>
+        <input
+            type="email"
+            class="input-box"
+            name="user_email"
+            placeholder="Enter your email"
+            required
+        >
 
-            <button class="login-btn" type="submit">REGISTER</button>
-        </form>
+        <label class="input-label">Password</label>
+        <input
+            type="password"
+            class="input-box"
+            placeholder="Enter your password"
+            required
+        >
+
+        <label class="input-label">Confirm Password</label>
+        <input
+            type="password"
+            class="input-box"
+            placeholder="Re-enter your password"
+            required
+        >
+        <button class="login-btn" type="submit">REGISTER</button>
+    </form>
+
 
         <a href="index.html" class="register-link">Already have an account? Login here</a>
     </main>
@@ -63,5 +87,12 @@
     <!-- scripts -->
     <script src="script.js"></script>
     <script src="register.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+    <script>
+        (function(){
+        emailjs.init("qCbLFZCQQZiwvV7Ts");
+        })();
+    </script>
+
 </body>
 </html>
