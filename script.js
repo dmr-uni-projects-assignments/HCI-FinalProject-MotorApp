@@ -11,7 +11,6 @@ overlay.addEventListener("click", () => {
     overlay.classList.remove("show");
 });
 
-
 // dark light mode
 document.addEventListener('DOMContentLoaded', () => {
     const toggleButton = document.getElementById('mode-toggle');

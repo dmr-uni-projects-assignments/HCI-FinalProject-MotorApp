@@ -4,7 +4,6 @@
     box-sizing: border-box;
 }
 
-
 body {
     background: #000;
     font-family: arial, sans-serif;
@@ -88,6 +87,7 @@ body {
 }
 
 .login-btn:hover {
+    background: darkred;
     opacity: 0.85;
     transition: ease-in-out 0.3s;
 }
@@ -267,8 +267,8 @@ body.light-mode .site-footer {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0);
-    z-index: 1500;   
+    background: rgba(0,0,0,0.6); 
+    z-index: 1500;
     display: none;
 }
 
