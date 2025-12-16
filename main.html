@@ -19,4 +19,12 @@
     <a class="hover button" href="support.html">Customer Support</a>
 </body>
 
+<script>
+    const savedMode = localStorage.getItem('theme'); 
+    if (savedMode === 'light') {
+        console.log("enabling light mode")
+        document.body.classList.add('light-mode');
+    }
+</script>
+
 </html>

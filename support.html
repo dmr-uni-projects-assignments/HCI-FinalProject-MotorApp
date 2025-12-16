@@ -35,6 +35,13 @@
     </div>
 
     <script src="support.js"></script>
+    <script>
+        const savedMode = localStorage.getItem('theme');
+        if (savedMode === 'light') {
+            console.log("enabling light mode")
+            document.body.classList.add('light-mode');
+        }
+    </script>
 </body>
 
 </html>

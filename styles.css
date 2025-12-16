@@ -47,3 +47,22 @@ a {
     margin-bottom: 40px;
     object-position: 50% 20%;
 }
+
+/* for light mode */
+body.light-mode {
+    background-color: #ffffff;
+    color: #111111;
+}
+
+body.light-mode .button {
+    background-color: #d00000;
+    color: white;
+}
+
+body.light-mode .hover:hover {
+    background-color: rgba(208, 0, 0, 0.3);
+}
+
+body.light-mode .banner {
+    border-bottom-color: #d00000;
+}
