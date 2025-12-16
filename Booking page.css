@@ -105,3 +105,43 @@ textarea {
         font-size: 24px;
     }
 }
+
+
+body.light-mode {
+    background: #f4f4f4;
+    color: #111;
+}
+
+body.light-mode .container {
+    background: #ffffff;
+}
+
+body.light-mode h2 {
+    color: #d64545;
+}
+
+body.light-mode label {
+    color: #d64545;
+}
+
+body.light-mode input,
+body.light-mode select,
+body.light-mode textarea {
+    background: #ffffff;
+    color: #111;
+    border-color: #ccc;
+}
+
+body.light-mode input::placeholder,
+body.light-mode textarea::placeholder {
+    color: #777;
+}
+
+body.light-mode .submit-btn {
+    background: #d64545;
+    color: white;
+}
+
+body.light-mode .submit-btn:hover {
+    background: #b83838;
+}

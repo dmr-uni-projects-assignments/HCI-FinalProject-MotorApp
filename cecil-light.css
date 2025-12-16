@@ -1,0 +1,54 @@
+
+
+body.light-mode {
+    background: #f4f4f4;
+    color: #111;
+}
+
+body.light-mode .container {
+    background: #ffffff;
+}
+
+body.light-mode .image-container {
+    background: #eaeaea;
+}
+
+body.light-mode .card {
+    background: #ffffff;
+}
+
+body.light-mode .card h2 {
+    color: #d64545;
+}
+
+body.light-mode .card p {
+    color: #111;
+}
+
+body.light-mode .mechanic-box,
+body.light-mode .vehicle-box {
+    background: #f2f2f2;
+}
+
+body.light-mode .mechanic-info span {
+    color: #111;
+}
+
+body.light-mode .card h3 {
+    color: #111;
+}
+
+body.light-mode .status {
+    background: #f2f2f2;
+    color: #111;
+}
+
+body.light-mode .status:hover {
+    background: #e0e0e0;
+}
+
+body.light-mode .status.active {
+    background: #d64545;
+    color: white;
+}
+

@@ -5,6 +5,8 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Service Tracking</title>
 <link rel="stylesheet" href="Ready.css">
+<link rel="stylesheet" href="cecil-light.css">
+
 </head>
 <body>
 <div class="container">
@@ -37,4 +39,13 @@
     </div>
 </div>
 </body>
+
+<script>
+    const savedMode = localStorage.getItem('theme'); 
+    if (savedMode === 'light') {
+        console.log("enabling light mode")
+        document.body.classList.add('light-mode');
+    }
+</script>
+
 </html>
