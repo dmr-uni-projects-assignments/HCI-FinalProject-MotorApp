@@ -3,7 +3,7 @@
 
 ## Project Overview
 
-[Sejahtera Mulia Motor App]((https://dmr-uni-projects-assignments.github.io/HCI-FinalProject-MotorApp/)) is a webapp used for motorcycle repair bookings at the **Sejahtera Mulia Motor** shop. The app allows customers to schedule service appointments easily and check their booking status. Furthermore, they could open support tickets with Customer Service.
+[Sejahtera Mulia Motor App](https://dmr-uni-projects-assignments.github.io/HCI-FinalProject-MotorApp/) is a webapp used for motorcycle repair bookings at the **Sejahtera Mulia Motor** shop. The app allows customers to schedule service appointments easily and check their booking status. Furthermore, they could open support tickets with Customer Service.
 
 ## Technologies Used
 
